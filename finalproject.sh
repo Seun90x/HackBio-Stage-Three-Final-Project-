@@ -25,7 +25,7 @@ bwa index raw_data/ref_genome/ecoli_rel606.fasta
 
 for SAMPLE in $(cat samples.txt) ; do
 
-#bwa mem \
+bwa mem \
  	raw_data/ref_genome/ecoli_rel606.fasta \
   	trimmed_reads/${SAMPLE}_1.fastq.gz \
    	trimmed_reads/${SAMPLE}_2.fastq.gz \
